@@ -182,18 +182,38 @@ $ git config --global user.email "your email"
 - 进入到刚才的仓库
 
 - 关联远程仓库（远程库默认名字为origin）
+首先需要在github网站上创建一个空的仓库，登录github后在页面右侧自己的头像旁边点击加号选择第一个 new repository，填写 repository name:demo，选择Public，然后点击最下面绿色按钮 Create repository后成功创建一个空仓库,最后在终端中运行下面命令:
 ```
-$ git remote add origin https://github.com/username/repositoryname.git
+$ git remote add origin https://github.com/yourusername/demo.git
 ```
-- 第一次推送到GitHub
+- 第一次推送到GitHub 后续推送（不再使用参数-u）
 ```
 $ git push -u origin master 
+warning: redirecting to https://github.com/yourusername/demo.git/
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 465 bytes | 155.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To http://github.com/yourusername/demo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
-
-- 后续推送（不再使用参数-u）
+- 成功后会出现上面一串描述，第一次会有警告，不必理会，之后会消失。现在刷新你的github网站，会发现你创建的readme.txt文件，至此，本地仓库与远程github仓库连接成功。  
+我们修改一下文件，再推送到github上：
+```
+$ echo "this is third modify" >> readme.txt
+$ git add readme.txt
+$ git commit -m "update file third"
+```
+- 此时我们更新github网站，发现并没有我们刚才添加的那句话，那是因为我们只是把它推到了本地的仓库上，没有推送到远程github库上，执行下面命令：
 ```
 $ git push origin master
 ```
+- 再次更新github后，发现我们添加的那句话已经出现。
+
+
 
 - 从远程库克隆
 ```
