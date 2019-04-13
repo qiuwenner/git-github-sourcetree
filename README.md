@@ -153,7 +153,7 @@ $ git commit -m "upload 3 files"
 ### *6. 创建远程仓库（以Github为例）*
 ![github图标](http://www.cdwanxun.com/uploads/allimg/c141106/14152441L04320-1T37.jpg)
 - 什么是Github？  
-引用菜鸟上的一句话：如果你是一枚Coder，但是你不知道Github，那么我觉的你就不是一个菜鸟级别的Coder，因为你压根不是真正Coder，你只是一个Code搬运工。如果没有Github账号[点击这里](https://git-scm.com/)注册一个。
+引用菜鸟上的一句话：如果你是一枚Coder，但是你不知道Github，那么我觉的你就不是一个菜鸟级别的Coder，因为你压根不是真正Coder，你只是一个Code搬运工。如果没有Github账号[点击这里](https://github.com/)注册一个。
 - Github是一个基于git的代码托管平台(也是全球最大的同性交友平台，哈哈)，用户可以把自己的代码托管在上面，有公共库（公开代码开源）和私有库（以前要收费，现在免费）之分，目前是全球最流行的开源托管平台，拥有143万开发者的社区。
 
 #### *创建 SSH Key*
