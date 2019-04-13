@@ -241,4 +241,3 @@ demo2
 - *[git为什么要配置公钥和私钥](https://www.jianshu.com/p/e93edea128a3)*
 - *[git安装详情](https://blog.csdn.net/xunhuanxiaogongzhu/article/details/80240078)*
 - * [SourceTree详细使用教程] （http://blog.cocoachina.com/article/71732）*
-的
